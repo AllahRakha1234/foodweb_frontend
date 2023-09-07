@@ -1,0 +1,169 @@
+/* *************************************** Responsiveness ********************************** */
+
+/* body{
+    background-color: red;
+} */
+
+/* Navbar */
+
+#navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar ul li a {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+
+/* Home */
+
+#home {
+    padding: 0px 110px;
+    height: 358px;
+}
+
+#home h1 {
+    color: white;
+    font-size: 1.9rem;
+
+}
+
+#home p {
+    color: white;
+    font-size: 0.6rem;
+}
+
+
+/* Services */
+
+#services-container {
+    margin-top: 85px;
+}
+
+.services {
+    flex-direction: column;
+    margin: 10px;
+}
+
+
+.services .box1 {
+    margin: 4px 5px;
+    border: 2px solid red;
+    background-color: rgb(221, 210, 210);
+    ;
+    border-radius: 10px;
+    margin-bottom: 22px;
+
+}
+
+.services .box1 img {
+    height: 80px;
+    display: block;
+    margin: auto;
+    padding: 5px 0px;
+}
+
+.services .box1 p {
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+}
+
+/* Clients */
+
+#clients-section {
+    height: 150px;
+    margin-bottom: 35px;
+}
+
+#clients-section::before {
+    height: 150px;
+
+}
+
+#clients .client-item {
+    padding: 8px;
+}
+
+#clients .client-item img {
+    height: 40px;
+}
+
+
+/* Contact */
+
+#contact-section h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#contact-section::before {
+    height: 380px;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 3px;
+    border-radius: 4px;
+    border: 1px solid rgb(24, 22, 22);
+}
+
+form label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* Footer */
+
+footer {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 6px;
+    margin-top: 6px;
+}
+
+/* Utility Classes */
+.btn {
+    margin-top: 6px;
+    padding: 3px 8px;
+    font-size: 13px;
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.h-primary {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.h-secondary {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.bg-design {
+    background-color: unset;
+    margin: 0px auto;
+}

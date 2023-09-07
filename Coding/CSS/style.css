@@ -1,0 +1,267 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+
+:root {
+    --navbar-height: 58px;
+}
+
+#navbar {
+    display: flex;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color:black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100% ;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    display: block;
+    color: white;
+    padding: 0 10px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+#logo {
+    margin: 0px 10px;
+
+}
+
+#logo img {
+    height: 40px;
+    margin: 5px 10px;
+}
+
+/* Home section */
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 200px;
+    height: 486px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    height: 520px;
+    width: 100%;
+    background: url("../img/bg1.jpg") no-repeat center center/cover ;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    font-size: 2.4rem;
+}
+
+#home p{
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Service Section */
+
+/* #services-container::before{
+    content: "";
+    position: absolute;
+    background: url("../img/service.jpg") no-repeat center center/cover ;
+    height: 600px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.3;
+} */
+
+.services{
+    display: flex;
+    margin: 15px;   
+}
+
+.services .box1{
+    margin: 4px 5px;
+    border: 2px solid red;
+    background-color: rgb(221, 210, 210);;
+    border-radius: 10px;
+    margin-bottom: 22px;
+
+}
+
+.services .box1 img{
+    height: 150px;
+    display: block;   
+    margin: auto;
+    padding: 10px 0px;
+}
+
+.services .box1 p{
+    text-align: center;
+    padding: 10px;
+}
+/* Client Section  */
+
+#clients-section{
+    height: 333px;
+    position: relative;
+}
+
+#clients-section .c-heading{
+    margin-top: 10px;
+}
+
+#clients-section::before{
+    content: "";
+    position: absolute;
+    background: url("../img/bg.jpg") no-repeat center center/cover ;
+    height: 300px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients .client-item {
+    padding: 24px;
+}
+
+#clients .client-item img {
+    height: 120px;
+}
+
+/* Contact Section  */
+
+#contact-section h1{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#contact-section::before{
+    content: "";
+    position: absolute;
+    background: url("../img/contact.jpg") no-repeat center center/cover ;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: 2.3;
+}
+
+#contact-box{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-bottom: 13px;
+}
+
+#contact-box form{
+    width: 50%;
+}
+
+#contact-box input,
+#contact-box textarea
+{
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid rgb(24, 22, 22);
+}
+
+form label{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Footer */
+footer{
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    margin-top: 12px;
+}
+
+/* Utility Classes */
+
+html{
+    scroll-behavior: smooth;
+}
+
+.h-primary {
+    font-size: 1.8rem;
+    padding: 5px;
+}
+
+.h-secondary {
+    font-size: 1.8rem;
+    padding: 5px;
+    background-color: aqua;
+}
+
+.bg-design{
+    background-color: aqua;
+    margin: 0px 569px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.btn{
+    margin-top: 10px;
+    padding: 5px 12px;
+    background-color: rgb(55, 0, 255);
+    font-size: 1.2rem;
+    border-radius: 6px;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    font-weight: bold;
+    background-color: rgb(0, 17, 255);
+
+}
